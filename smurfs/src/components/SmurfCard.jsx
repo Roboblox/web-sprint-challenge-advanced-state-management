@@ -3,15 +3,11 @@ import { connect } from "react-redux";
 import "./smurfs.css";
 
 const SmurfCard = (props) => {
-  const smurfLink = "/profile/" + props.smurf.id;
-
   return (
-    <div>
-      <div>
-        Name: {props.smurf.name} <br />
-        Age: {props.smurf.age} <br />
-        Height: {props.smurf.height}
-      </div>
+    <div className="box">
+      <h2>Name: {props.smurf.name}</h2>
+      <p>Age: {props.smurf.age}</p>
+      <p> Height: {props.smurf.height}cm</p>
     </div>
   );
 };
