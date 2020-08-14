@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import "./smurfs.css";
 
 const SmurfCard = (props) => {
   const smurfLink = "/profile/" + props.smurf.id;
