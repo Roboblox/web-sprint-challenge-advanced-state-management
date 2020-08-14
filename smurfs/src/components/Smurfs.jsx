@@ -12,9 +12,6 @@ const Smurfs = (props) => {
 
   return (
     <div>
-      <nav>
-        <h1 id="title">I Love Smurfette 🚀 🪐 </h1>
-      </nav>
       <section>
         {props.isLoading ? <h4>Loading Smurf now...</h4> : null}
         {props.smurfs &&

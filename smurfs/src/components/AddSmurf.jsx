@@ -21,35 +21,38 @@ const Form = (props) => {
   return (
     <div>
       <form onSubmit={(e) => addNewSmurf(e)}>
-        <div>
+        <div className="formDiv">
           <input
             type="text"
             name="name"
-            placeholder="Smurf Name *"
+            placeholder="Smurf Name"
             onChange={handleChange}
             required
           />
         </div>
-        <div>
+        <div className="formDiv">
           <input
             type="number"
             name="age"
             min="0"
-            placeholder="Age"
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="number"
-            name="height"
-            min="0"
-            placeholder="Height"
+            placeholder="Smurf Age"
             onChange={handleChange}
             required
           />
         </div>
+        <div className="formDiv">
+          <input
+            type="number"
+            name="height"
+            min="0"
+            placeholder="Smurf Height"
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <div>
-          <button>Submit</button>
+          <button>Smurf Submit</button>
         </div>
       </form>
     </div>
